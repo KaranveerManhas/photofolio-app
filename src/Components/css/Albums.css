@@ -1,0 +1,76 @@
+.heading-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  background: #cccccc56;
+
+}
+
+.album-form-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.album-form-btn:hover {
+  border-color: green;
+  background-color: green;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.albums-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 70vh;
+  background: #cccccc56;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.album-card {
+  width: 300px;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.album-title {
+  position: absolute;
+  color: #fff;
+  bottom: -10%;
+  left: 10%;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-card:hover .album-title{
+  bottom: 15%;
+  opacity: 1;
+}
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-card:hover .album-image {
+  filter: brightness(50%);
+}

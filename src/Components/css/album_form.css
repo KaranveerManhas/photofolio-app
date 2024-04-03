@@ -1,0 +1,51 @@
+.form-container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.form-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.input-btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-input {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 1.2rem;
+    /* border: none; */
+    font-size: 1.5rem;
+}
+
+.form-input:focus {
+    border: none;
+    outline: 2px solid green;
+}
+
+.form-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 1.2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: #fff;
+}
+
+.form-btn:hover {
+    border-color: green;
+    background-color: green;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
